@@ -1,4 +1,4 @@
-package string;
+package string.removeChar;
 
 import static org.junit.Assert.*;
 

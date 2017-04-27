@@ -1,4 +1,4 @@
-package array;
+package array.findMissingNum;
 
 import static org.junit.Assert.*;
 

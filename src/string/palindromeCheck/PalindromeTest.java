@@ -1,4 +1,4 @@
-package string;
+package string.palindromeCheck;
 
 import static org.junit.Assert.*;
 

@@ -1,4 +1,4 @@
-package string;
+package string.palindromeCheck;
 
 /**
  * Program includes three methods of checking if a string is a valid palindrome.
