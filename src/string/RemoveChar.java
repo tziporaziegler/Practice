@@ -1,4 +1,4 @@
-package string.removeChar;
+package string;
 
 public class RemoveChar {
 

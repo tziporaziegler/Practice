@@ -1,8 +1,10 @@
-package string.palindromeCheck;
+package string;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import string.PalindromeCheck;
 
 /**
  * Test for all methods in PalindromeCheck

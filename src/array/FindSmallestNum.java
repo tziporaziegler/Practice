@@ -1,4 +1,4 @@
-package array.findSmallestNum;
+package array;
 
 public class FindSmallestNum {
 

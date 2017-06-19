@@ -1,11 +1,11 @@
-package array.findDuplicateNum;
+package array;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import array.findDuplicateNum.DuplicateNotFoundException;
-import array.findDuplicateNum.FindDuplicateNum;
+import array.FindDuplicateNum;
+import exceptions.DuplicateNotFoundException;
 
 public class FindDuplicateNumTest {
 

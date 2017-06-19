@@ -1,6 +1,8 @@
-package array.findDuplicateNum;
+package array;
 
 import java.util.HashSet;
+
+import exceptions.DuplicateNotFoundException;
 
 /**
  * In an array 1-100 exactly one number is duplicate how do you find it?

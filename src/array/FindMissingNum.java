@@ -1,4 +1,4 @@
-package array.findMissingNum;
+package array;
 
 import java.util.HashSet;
 

@@ -1,10 +1,10 @@
-package array.findMissingNum;
+package array;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import array.findMissingNum.FindMissingNum;
+import array.FindMissingNum;
 
 public class FindMissingNumTest {
 

@@ -1,8 +1,10 @@
-package string.removeChar;
+package string;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import string.RemoveChar;
 
 public class RemoveCharTest {
 

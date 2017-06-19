@@ -1,4 +1,4 @@
-package array.compareArrays;
+package array;
 
 import static org.junit.Assert.assertEquals;
 
@@ -6,7 +6,7 @@ import java.util.HashSet;
 
 import org.junit.Test;
 
-import array.compareArrays.CompareArrays;
+import array.CompareArrays;
 
 public class CompareArraysTest {
 
