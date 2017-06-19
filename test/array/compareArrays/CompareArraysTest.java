@@ -6,6 +6,8 @@ import java.util.HashSet;
 
 import org.junit.Test;
 
+import array.compareArrays.CompareArrays;
+
 public class CompareArraysTest {
 
 	@Test

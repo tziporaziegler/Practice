@@ -4,6 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import array.findDuplicateNum.DuplicateNotFoundException;
+import array.findDuplicateNum.FindDuplicateNum;
+
 public class FindDuplicateNumTest {
 
 	@Test
