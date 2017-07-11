@@ -1,2 +1,2 @@
 # Practice
-Scratch space for practice programs
+A collection of of interview practice problems and solutions
