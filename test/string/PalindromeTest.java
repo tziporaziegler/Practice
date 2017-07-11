@@ -39,7 +39,7 @@ public class PalindromeTest {
 
 	@Test
 	public void forLoopCheckTest() {
-		PalindromeCheck check = new PalindromeCheck();
+		final PalindromeCheck check = new PalindromeCheck();
 		assertTrue(check.forLoopCheck("tattarrattat"));
 		assertTrue(check.forLoopCheck("aibohphobia"));
 		assertTrue(check.forLoopCheck("abcba"));
