@@ -1,10 +1,9 @@
 package string;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-
-import string.PalindromeCheck;
 
 /**
  * Test for all methods in PalindromeCheck
@@ -16,7 +15,7 @@ public class PalindromeTest {
 
 	@Test
 	public void whileCheckTest() {
-		PalindromeCheck check  = new PalindromeCheck();
+		final PalindromeCheck check = new PalindromeCheck();
 		assertTrue(check.whileCheck("tattarrattat"));
 		assertTrue(check.whileCheck("aibohphobia"));
 		assertTrue(check.whileCheck("abcba"));
@@ -25,10 +24,10 @@ public class PalindromeTest {
 		assertFalse(check.whileCheck(""));
 		assertFalse(check.whileCheck(null));
 	}
-	
+
 	@Test
 	public void stringBuilderCheckTest() {
-		PalindromeCheck check  = new PalindromeCheck();
+		PalindromeCheck check = new PalindromeCheck();
 		assertTrue(check.stringBuilderCheck("tattarrattat"));
 		assertTrue(check.stringBuilderCheck("aibohphobia"));
 		assertTrue(check.stringBuilderCheck("abcba"));
@@ -37,10 +36,10 @@ public class PalindromeTest {
 		assertFalse(check.stringBuilderCheck(""));
 		assertFalse(check.stringBuilderCheck(null));
 	}
-	
+
 	@Test
 	public void forLoopCheckTest() {
-		PalindromeCheck check  = new PalindromeCheck();
+		PalindromeCheck check = new PalindromeCheck();
 		assertTrue(check.forLoopCheck("tattarrattat"));
 		assertTrue(check.forLoopCheck("aibohphobia"));
 		assertTrue(check.forLoopCheck("abcba"));

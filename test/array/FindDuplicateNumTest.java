@@ -1,10 +1,9 @@
 package array;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import array.FindDuplicateNum;
 import exceptions.DuplicateNotFoundException;
 
 public class FindDuplicateNumTest {
@@ -19,7 +18,7 @@ public class FindDuplicateNumTest {
 
 		numbers[100] = 67;
 
-		FindDuplicateNum dup = new FindDuplicateNum();
+		final FindDuplicateNum dup = new FindDuplicateNum();
 		assertEquals(dup.findDuplicate(numbers), 67);
 	}
 
@@ -34,7 +33,7 @@ public class FindDuplicateNumTest {
 		numbers[100] = numbers[48];
 		numbers[48] = 35;
 
-		FindDuplicateNum dup = new FindDuplicateNum();
+		final FindDuplicateNum dup = new FindDuplicateNum();
 		assertEquals(dup.findDuplicate(numbers), 35);
 	}
 
@@ -47,7 +46,7 @@ public class FindDuplicateNumTest {
 			numbers[i] = i;
 		}
 
-		FindDuplicateNum dup = new FindDuplicateNum();
+		final FindDuplicateNum dup = new FindDuplicateNum();
 		assertEquals(dup.findDuplicate(numbers), 1);
 	}
 

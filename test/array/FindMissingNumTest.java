@@ -1,10 +1,8 @@
 package array;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import array.FindMissingNum;
 
 public class FindMissingNumTest {
 
@@ -23,7 +21,7 @@ public class FindMissingNumTest {
 			}
 		}
 
-		FindMissingNum missing = new FindMissingNum();
+		final FindMissingNum missing = new FindMissingNum();
 
 		assertEquals(missing.missingNumRemove(numbers), 52);
 		assertEquals(missing.missingNumAdd(numbers), 52);
@@ -40,12 +38,12 @@ public class FindMissingNumTest {
 			number++;
 		}
 
-		FindMissingNum missing = new FindMissingNum();
+		final FindMissingNum missing = new FindMissingNum();
 
 		assertEquals(missing.missingNumRemove(numbers), 1);
 		assertEquals(missing.missingNumAdd(numbers), 1);
 	}
-	
+
 	@Test
 	public void test100() {
 		int[] numbers = new int[99];
@@ -54,7 +52,7 @@ public class FindMissingNumTest {
 			numbers[i] = i + 1;
 		}
 
-		FindMissingNum missing = new FindMissingNum();
+		final FindMissingNum missing = new FindMissingNum();
 
 		assertEquals(missing.missingNumRemove(numbers), 100);
 		assertEquals(missing.missingNumAdd(numbers), 100);

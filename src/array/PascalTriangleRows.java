@@ -24,12 +24,11 @@ import java.util.Arrays;
  * </pre>
  * 
  * @author Tzipora Ziegler
- * 
  * @see https://www.interviewbit.com/problems/pascal-triangle-rows/
  */
 public class PascalTriangleRows {
 	public ArrayList<ArrayList<Integer>> generate(int a) {
-		ArrayList<ArrayList<Integer>> rows = new ArrayList<ArrayList<Integer>>();
+		final ArrayList<ArrayList<Integer>> rows = new ArrayList<ArrayList<Integer>>();
 
 		ArrayList<Integer> previousRow = new ArrayList<Integer>(Arrays.asList(1));
 		if (a > 0) {
@@ -37,7 +36,7 @@ public class PascalTriangleRows {
 		}
 
 		for (int i = 1; i < a; i++) {
-			ArrayList<Integer> row = new ArrayList<Integer>();
+			final ArrayList<Integer> row = new ArrayList<Integer>();
 
 			row.add(1);
 

@@ -8,7 +8,6 @@ import exceptions.DuplicateNotFoundException;
  * In an array 1-100 exactly one number is duplicate how do you find it?
  * 
  * @author Tzipora Ziegler
- *
  */
 public class FindDuplicateNum {
 
@@ -18,9 +17,9 @@ public class FindDuplicateNum {
 	 * @throws DuplicateNotFoundException
 	 */
 	public int findDuplicate(int[] numbers) throws DuplicateNotFoundException {
-		HashSet<Integer> set = new HashSet<Integer>();
+		final HashSet<Integer> set = new HashSet<Integer>();
 
-		for (int num : numbers) {
+		for (final int num : numbers) {
 			if (set.contains(num)) {
 				return num;
 			}

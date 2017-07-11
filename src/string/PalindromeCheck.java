@@ -45,7 +45,7 @@ public class PalindromeCheck {
 			return false;
 		}
 
-		StringBuilder builder = new StringBuilder(text);
+		final StringBuilder builder = new StringBuilder(text);
 		return builder.toString().equals(builder.reverse().toString());
 	}
 
@@ -60,8 +60,8 @@ public class PalindromeCheck {
 			return false;
 		}
 
-		int endIndex = text.length() - 1;
-		int middleIndex = text.length() / 2;
+		final int endIndex = text.length() - 1;
+		final int middleIndex = text.length() / 2;
 
 		for (int i = 0; i <= middleIndex; i++) {
 			if (text.charAt(i) != text.charAt(endIndex - i)) {

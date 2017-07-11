@@ -3,10 +3,10 @@ package algorithms.sort;
 public class QuickSort {
 
 	public int[] sort(int[] arr) {
-		if(arr == null || arr.length < 2) {
+		if (arr == null || arr.length < 2) {
 			return arr;
 		}
-		
+
 		quicksort(arr, 0, arr.length - 1);
 
 		return arr;

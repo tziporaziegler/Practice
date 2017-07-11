@@ -28,7 +28,6 @@ import java.util.Arrays;
  * </pre>
  * 
  * @author Tzipora Ziegler
- * 
  * @see https://www.interviewbit.com/problems/prime-sum/
  */
 public class PrimeSum {
@@ -49,12 +48,14 @@ public class PrimeSum {
 	}
 
 	public boolean isPrime(int n) {
-		if (n % 2 == 0)
+		if (n % 2 == 0) {
 			return false;
+		}
 
 		for (int i = 3; i * i <= n; i += 2) {
-			if (n % i == 0)
+			if (n % i == 0) {
 				return false;
+			}
 		}
 		return true;
 	}
