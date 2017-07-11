@@ -19,29 +19,24 @@ import java.util.ArrayList;
  */
 public class MultiplyString {
 	public String multiply(String a, String b) {
-		if (a.equals("0") || b.equals("0"))
+		if ("0".equals(a) || "0".equals(b))
+		{
 			return "0";
+		}
 
-		ArrayList<Integer> productArray = new ArrayList<Integer>();
-
+		final ArrayList<Integer> productArray = new ArrayList<Integer>();
 		int moveOver = 1;
 
 		for (int j = b.length() - 1; j >= 0; j--) {
 			int leftover = 0;
-
 			int position = productArray.size() - moveOver++;
-
-			int bottomDigit = Character.getNumericValue(b.charAt(j));
+			final int bottomDigit = Character.getNumericValue(b.charAt(j));
 
 			for (int i = a.length() - 1; i >= 0; i--) {
-				int topDigit = Character.getNumericValue(a.charAt(i));
-
-				int currentDigit = position >= 0 ? productArray.get(position) : 0;
-
-				int product = bottomDigit * topDigit + leftover + currentDigit;
-
-				int placeNumber = product % 10;
-
+				final int topDigit = Character.getNumericValue(a.charAt(i));
+				final int currentDigit = position >= 0 ? productArray.get(position) : 0;
+				final int product = bottomDigit * topDigit + leftover + currentDigit;
+				final int placeNumber = product % 10;
 				leftover = product / 10;
 
 				if (position >= 0) {
@@ -64,8 +59,8 @@ public class MultiplyString {
 	}
 
 	private String printList(ArrayList<Integer> list) {
-		StringBuilder builder = new StringBuilder();
-		for (Integer digit : list) {
+		final StringBuilder builder = new StringBuilder();
+		for (final int digit : list) {
 			if (builder.length() > 0 || digit != 0) {
 				builder.append(digit);
 			}
