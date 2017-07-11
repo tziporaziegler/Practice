@@ -1,2 +1,2 @@
 # Practice
-A collection of of interview practice problems and solutions
+A collection of interview practice problems and solutions
