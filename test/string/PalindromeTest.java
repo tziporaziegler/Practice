@@ -27,7 +27,7 @@ public class PalindromeTest {
 
 	@Test
 	public void stringBuilderCheckTest() {
-		PalindromeCheck check = new PalindromeCheck();
+		final PalindromeCheck check = new PalindromeCheck();
 		assertTrue(check.stringBuilderCheck("tattarrattat"));
 		assertTrue(check.stringBuilderCheck("aibohphobia"));
 		assertTrue(check.stringBuilderCheck("abcba"));
