@@ -19,7 +19,7 @@ public class LongestConsecutiveSequence {
 	public int longestConsecutive(final List<Integer> a) {
 		int max = 0;
 
-		if (a == null || a.size() == 0) {
+		if (a == null || a.isEmpty()) {
 			return max;
 		}
 
@@ -37,7 +37,7 @@ public class LongestConsecutiveSequence {
 
 		for (int i = 1; i < a.size(); i++) {
 
-			int current = a.get(i);
+			final int current = a.get(i);
 
 			// System.out.println("current: " + current);
 			// System.out.println("last: " + last);
