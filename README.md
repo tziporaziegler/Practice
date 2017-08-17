@@ -8,10 +8,10 @@ A collection of Java interview practice problems and solutions, along with JUnit
  - [Find the Smallest Number](/src/array/FindSmallestNum.java)  
    Given an array, find the smallest number in the array.
  - [Find Missing Numbers](/src/array/FindMissingNum.java)  
-   In an array 1-100 numbers are stored, one number is missing. How do you find
+   In an array, 1-100 numbers are stored. One number is missing. How do you find
 it?
  - [Find Duplicate Numbers](/src/array/FindDuplicateNum.java)  
-   In an array 1-100, exactly one number is duplicate. How do you find it?
+   In an array of 1-100, exactly one number is duplicate. How do you find it?
  - [Compare Arrays](/src/array/CompareArrays.java)  
    Given two arrays, find which number(s) is not present in the second array.
  - [Longest Consecutive Sequence](/src/array/LongestConsecutiveSequence.java)  
@@ -28,7 +28,7 @@ it?
  - [Multiply String](/src/string/MultiplyString.java)  
    Given two numbers represented as strings, return multiplication of the numbers as a string. Do not use BigInteger.
  - [Merge and Order String Characters](/src/string/MergeAndOrderStringChars.java)  
-   Given an array of Strings, return a single String containing all the characters in alphabetical order.
+   Given an array of strings, return a single string containing all the characters in alphabetical order.
 
 ### Stack
 
@@ -54,6 +54,6 @@ it?
 
  - [Fibonacci Sequence](/src/math/FibonacciSequence.java)  
    Given an integer `x`, print `x` number of elements in the sequence.  
-   Given an integer, find the value of the element in that position of the sequence.
+   Given an integer, return the value of the element in that position of the sequence.
  - [Prime Sum](/src/math/PrimeSum.java)  
    Given an even number (greater than 2), return two prime numbers whose sum will be equal to given number.  
