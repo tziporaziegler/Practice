@@ -54,6 +54,6 @@ it?
 
  - [Fibonacci Sequence](/src/math/FibonacciSequence.java)  
    Given an integer `x`, print `x` number of elements in the sequence.  
-   Given an integer `x`, find the value of the element in that position of the sequence.
+   Given an integer, find the value of the element in that position of the sequence.
  - [Prime Sum](/src/math/PrimeSum.java)  
    Given an even number (greater than 2), return two prime numbers whose sum will be equal to given number.  
