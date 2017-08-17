@@ -1,2 +1,59 @@
 # Practice
-A collection of interview practice problems and solutions
+A collection of Java interview practice problems and solutions, along with JUnit test files.
+
+## Data Structures
+
+### Array
+
+ - [Find the Smallest Number](/src/array/FindSmallestNum.java)  
+   Given an array, find the smallest number in the array.
+ - [Find Missing Numbers](/src/array/FindMissingNum.java)  
+   In an array 1-100 numbers are stored, one number is missing. How do you find
+it?
+ - [Find Duplicate Numbers](/src/array/FindDuplicateNum.java)  
+   In an array 1-100, exactly one number is duplicate. How do you find it?
+ - [Compare Arrays](/src/array/CompareArrays.java)  
+   Given two arrays, find which number(s) is not present in the second array.
+ - [Longest Consecutive Sequence](/src/array/LongestConsecutiveSequence.java)  
+   Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
+ - [Pascal Triangle](/src/array/PascalTriangleRows.java)  
+   Given an integer `x`, generate the first `x` number of rows of Pascal’s triangle.
+ 
+### String
+
+ - [Remove Character](/src/string/RemoveChar.java)  
+   Remove all instances of a specific character from the given String.
+ - [Palindrome Check](/src/string/PalindromeCheck.java)  
+   Given a String, check if the String is a valid palindrome.
+ - [Multiply String](/src/string/MultiplyString.java)  
+   Given two numbers represented as strings, return multiplication of the numbers as a string. Do not use BigInteger.
+ - [Merge and Order String Characters](/src/string/MergeAndOrderStringChars.java)  
+   Given an array of Strings, return a single String containing all the characters in alphabetical order.
+
+### Stack
+
+ - Array Implementation
+ - Balanced Parenthesis
+
+### Tree
+
+ - [Binary Tree](/src/tree/BinaryTree.java)  
+   Includes methods for inserting, removing, traversing (in order, pre-order, post-order) and finding Nodes.
+
+## Algorithms
+
+### Sort
+
+ - [Quick Sort](/src/algorithms/sort/QuickSort.java)
+ 
+### Search
+
+ - Binary Search
+
+### Math
+
+ - [Fibonacci Sequence](/src/math/FibonacciSequence.java)  
+   Given an integer `x`, print `x` number of elements in the sequence.  
+   Given an integer `x`, find the value of the element in that position of the sequence.
+ - [Prime Sum](/src/math/PrimeSum.java)  
+   Given an even number (greater than 2), return two prime numbers whose sum will be equal to given number.  
