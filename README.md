@@ -40,11 +40,9 @@ it?
 ### Tree
 
  - [Binary Tree](/src/tree/BinaryTree.java)  
-   Includes methods for:  
-   inserting and removing  
-   traversing - in order, pre-order, post-order  
-   searching - find by value, smallest, nth smallest element
-
+   Includes methods for inserting, removing, traversing (in order, pre-order, post-order)  
+   and searching (find by value, smallest, nth smallest element).  
+ 
 ## Algorithms
 
 ### Sort
@@ -56,7 +54,7 @@ it?
  
 ### Search
 
- - [Binary Search(/src/algorithms/search/BinarySearch.java) - O(log n)
+ - [Binary Search](/src/algorithms/search/BinarySearch.java) - O(log n)
  - [Linear Search](/src/algorithms/search/LinearSearch.java) - O(n)
 
 ### Math
