@@ -32,23 +32,32 @@ it?
 
 ### Stack
 
- - Array Implementation
- - Balanced Parenthesis
+ - [Array Implementation](/src/stack/StackArray.java)  
+   Includes the following methods: push(), pop(), peek(), size(), isEmpty() and isFull().
+ - [Balanced Parentheses](/src/tree/BalancedParentheses.java)  
+   Given a String, determine if the parentheses have pairs and are in order.
 
 ### Tree
 
  - [Binary Tree](/src/tree/BinaryTree.java)  
-   Includes methods for inserting, removing, traversing (in order, pre-order, post-order) and finding Nodes.
+   Includes methods for:  
+   inserting and removing  
+   traversing - in order, pre-order, post-order  
+   searching - find by value, smallest, nth smallest element
 
 ## Algorithms
 
 ### Sort
 
- - [Quick Sort](/src/algorithms/sort/QuickSort.java)
+ - [Quick Sort](/src/algorithms/sort/QuickSort.java) - O(n log n)
+ - [Bubble Sort](/src/algorithms/sort/BubbleSort.java) - O(n^2)
+ - [Selection Sort](/src/algorithms/sort/SelectionSort.java) - O(n^2)
+ - [Insertion Sort](/src/algorithms/sort/InsertionSort.java) - O(n^2)
  
 ### Search
 
- - Binary Search
+ - [Binary Search(/src/algorithms/search/BinarySearch.java) - O(log n)
+ - [Linear Search](/src/algorithms/search/LinearSearch.java) - O(n)
 
 ### Math
 

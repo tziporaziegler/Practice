@@ -1,5 +1,7 @@
 package tree;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class BinaryTree {
 
 	private Node root;
@@ -148,22 +150,19 @@ public class BinaryTree {
 
 		if (focus.key == value) {
 
-			//TODO replace node
-			/*if (parent == null) {
-				root = null;
-			}
-			else {
-				if(isLeftChild && parent.lef)
-				
-				Node smallestNode = focus;
-				
-				while(smallestNode.leftChild != null){
-					smallestNode = smallestNode.leftChild;
-				}
-
-				focus.rightChild.leftChild = focus.leftChild;
-				parent.rightChild = focus.rightChild;
-			}*/
+			// TODO replace node
+			/* if (parent == null) {
+			 * root = null;
+			 * }
+			 * else {
+			 * if(isLeftChild && parent.lef)
+			 * Node smallestNode = focus;
+			 * while(smallestNode.leftChild != null){
+			 * smallestNode = smallestNode.leftChild;
+			 * }
+			 * focus.rightChild.leftChild = focus.leftChild;
+			 * parent.rightChild = focus.rightChild;
+			 * } */
 
 			return true;
 		}
@@ -173,5 +172,45 @@ public class BinaryTree {
 		}
 
 		return removeRecursion(value, focus.rightChild, focus, false);
+	}
+
+	public String findSmallestValue() {
+		return findSmallestValueRecursion(root);
+	}
+	
+	private String findSmallestValueRecursion(Node node) {
+		if (node == null) {
+			return null;
+		}
+
+		if (node.leftChild != null) {
+			return findSmallestValueRecursion(node.leftChild);
+		}
+
+		return node.name;
+	}
+
+	public String findNthSmallestValue(int nth) {
+		return findNthSmallestValueRecursion(root, new AtomicInteger(nth));
+	}
+
+	private String findNthSmallestValueRecursion(Node focus, AtomicInteger nth) {
+		if (focus == null || nth.get() == 0) {
+			return null;
+		}
+		
+		String value = findNthSmallestValueRecursion(focus.leftChild, nth);
+		
+		// Found in the left subtree itself
+		if (value != null) {
+			return value;
+		}
+		
+		if (nth.decrementAndGet() == 0) {
+			return focus.name;
+		}
+		
+		// Check in the right subtree
+		return findNthSmallestValueRecursion(focus.rightChild, nth);
 	}
 }
