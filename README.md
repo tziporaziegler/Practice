@@ -34,7 +34,7 @@ it?
 
  - [Array Implementation](/src/stack/StackArray.java)  
    Includes the following methods: push(), pop(), peek(), size(), isEmpty() and isFull().
- - [Balanced Parentheses](/src/tree/BalancedParentheses.java)  
+ - [Balanced Parentheses](/src/stack/BalancedParentheses.java)  
    Given a String, determine if the parentheses have pairs and are in order.
 
 ### Tree
