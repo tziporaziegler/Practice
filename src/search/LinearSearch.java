@@ -1,4 +1,4 @@
-package algorithms.search;
+package search;
 
 public class LinearSearch {
 

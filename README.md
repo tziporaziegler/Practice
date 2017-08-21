@@ -47,15 +47,15 @@ it?
 
 ### Sort
 
- - [Quick Sort](/src/algorithms/sort/QuickSort.java) - O(n log n)
- - [Bubble Sort](/src/algorithms/sort/BubbleSort.java) - O(n^2)
- - [Selection Sort](/src/algorithms/sort/SelectionSort.java) - O(n^2)
- - [Insertion Sort](/src/algorithms/sort/InsertionSort.java) - O(n^2)
+ - [Quick Sort](/src/sort/QuickSort.java) - O(n log n)
+ - [Bubble Sort](/src/sort/BubbleSort.java) - O(n^2)
+ - [Selection Sort](/src/sort/SelectionSort.java) - O(n^2)
+ - [Insertion Sort](/src/sort/InsertionSort.java) - O(n^2)
  
 ### Search
 
- - [Binary Search](/src/algorithms/search/BinarySearch.java) - O(log n)
- - [Linear Search](/src/algorithms/search/LinearSearch.java) - O(n)
+ - [Binary Search](/src/search/BinarySearch.java) - O(log n)
+ - [Linear Search](/src/search/LinearSearch.java) - O(n)
 
 ### Math
 
@@ -64,3 +64,5 @@ it?
    Given an integer, return the value of the element in that position of the sequence.
  - [Prime Sum](/src/math/PrimeSum.java)  
    Given an even number (greater than 2), return two prime numbers whose sum will be equal to given number.  
+ - [Find Factors](/src/math/FindFactors.java)  
+   Return a list of all factors of a given integer.

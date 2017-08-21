@@ -1,7 +1,9 @@
-package algorithms.sort;
+package sort;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import sort.QuickSort;
 
 public class QuickSortTest {
 

@@ -1,4 +1,4 @@
-package algorithms.sort;
+package sort;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

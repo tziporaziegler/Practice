@@ -26,5 +26,10 @@ public class BalancedParenthesesTest {
 	public void testMissing() {
 		assertFalse(BalancedParentheses.isBalanced("{([])"));
 	}
+	
+	@Test
+	public void testExtraLetters() {
+		assertTrue(BalancedParentheses.isBalanced("as(dfg{d[]s}aad)"));
+	}
 
 }
