@@ -59,6 +59,8 @@ it?
 
 ### Math
 
+ - [Is Prime](/src/math/IsPrime.java)  
+   Given an integer, determine whether the integer is a prime number.
  - [Fibonacci Sequence](/src/math/FibonacciSequence.java)  
    Given an integer `x`, print `x` number of elements in the sequence.  
    Given an integer, return the value of the element in that position of the sequence.
