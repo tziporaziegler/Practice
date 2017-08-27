@@ -18,6 +18,8 @@ it?
    Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
  - [Pascal Triangle](/src/array/PascalTriangleRows.java)  
    Given an integer `x`, generate the first `x` number of rows of Pascal’s triangle.
+ - [Powerset](/src/array/Powerset.java)  
+   Given an array or set of objects, return a set of all possible subsets.
  
 ### String
 
