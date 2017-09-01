@@ -9,10 +9,12 @@ import java.util.Set;
  * Given an array or list of objects, return a set of all possible subsets.
  * 
  * @author Tzipora Ziegler
- *
  */
 public class Powerset {
 
+	/**
+	 * This function uses Generics, Arrays and Sets.
+	 */
 	public <T> Set<Set<T>> getPowerset(T[] originalSet, int start) {
 		Set<Set<T>> sets = new HashSet<Set<T>>();
 
@@ -33,6 +35,11 @@ public class Powerset {
 		return sets;
 	}
 
+	/**
+	 * This function uses Generics and Sets.
+	 * <p>
+	 * The complexity of the function is O(2^n), since it needs to generate 2^n possible combinations.
+	 */
 	public <T> Set<Set<T>> getPowerset(Set<T> originalSet) {
 		Set<Set<T>> sets = new HashSet<Set<T>>();
 
@@ -43,9 +50,9 @@ public class Powerset {
 
 		List<T> list = new ArrayList<T>(originalSet);
 		T head = list.get(0);
-		
-		//list.remove(0);
-		
+
+		// list.remove(0);
+
 		for (Set<T> set : getPowerset(new HashSet<T>(list.subList(1, list.size())))) {
 			Set<T> newSet = new HashSet<T>();
 			newSet.add(head);

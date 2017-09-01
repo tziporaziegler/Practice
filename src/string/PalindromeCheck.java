@@ -46,7 +46,7 @@ public class PalindromeCheck {
 		}
 
 		final StringBuilder builder = new StringBuilder(text);
-		return builder.toString().equals(builder.reverse().toString());
+		return text.equals(builder.reverse().toString());
 	}
 
 	/**
