@@ -7,7 +7,7 @@ import java.util.Arrays;
  * Given an even number ( greater than 2 ), return two prime numbers whose sum will be equal to given number.
  * <p>
  * <strong>NOTE</strong> A solution will always exist.
- * Read <a href="https://en.wikipedia.org/wiki/Goldbach%27s_conjecture">Goldbach’s conjecture</a>.
+ * Read <a href="https://en.wikipedia.org/wiki/Goldbach%27s_conjecture">Goldbachï¿½s conjecture</a>.
  * <p>
  * <strong>Example:</strong>
  * 
@@ -47,13 +47,14 @@ public class PrimeSum {
 		return new ArrayList<Integer>(Arrays.asList(num1, num2));
 	}
 
-	public boolean isPrime(int n) {
-		if (n % 2 == 0) {
+	public boolean isPrime(int num) {
+		// check if n is a multiple of 2
+		if (num % 2 == 0 && num != 2) {
 			return false;
 		}
 
-		for (int i = 3; i * i <= n; i += 2) {
-			if (n % i == 0) {
+		for (int i = 3; i <= Math.sqrt(num); i += 2) {
+			if (num % i == 0) {
 				return false;
 			}
 		}
