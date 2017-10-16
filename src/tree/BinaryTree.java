@@ -7,7 +7,7 @@ public class BinaryTree {
 	private Node root;
 
 	public void insertWithWhile(int key) {
-		Node newNode = new Node(key, String.valueOf(key));
+		Node newNode = new Node(key);
 
 		if (root == null) {
 			root = newNode;
@@ -37,7 +37,7 @@ public class BinaryTree {
 	}
 
 	public void insertWithRecursion(int key) {
-		Node newNode = new Node(key, String.valueOf(key));
+		Node newNode = new Node(key);
 
 		if (root == null) {
 			root = newNode;
@@ -174,11 +174,11 @@ public class BinaryTree {
 		return removeRecursion(value, focus.rightChild, focus, false);
 	}
 
-	public String findSmallestValue() {
+	public Integer findSmallestValue() {
 		return findSmallestValueRecursion(root);
 	}
 	
-	private String findSmallestValueRecursion(Node node) {
+	private Integer findSmallestValueRecursion(Node node) {
 		if (node == null) {
 			return null;
 		}
@@ -187,19 +187,19 @@ public class BinaryTree {
 			return findSmallestValueRecursion(node.leftChild);
 		}
 
-		return node.name;
+		return node.key;
 	}
 
-	public String findNthSmallestValue(int nth) {
+	public Integer findNthSmallestValue(int nth) {
 		return findNthSmallestValueRecursion(root, new AtomicInteger(nth));
 	}
 
-	private String findNthSmallestValueRecursion(Node focus, AtomicInteger nth) {
+	private Integer findNthSmallestValueRecursion(Node focus, AtomicInteger nth) {
 		if (focus == null || nth.get() == 0) {
 			return null;
 		}
 		
-		String value = findNthSmallestValueRecursion(focus.leftChild, nth);
+		Integer value = findNthSmallestValueRecursion(focus.leftChild, nth);
 		
 		// Found in the left subtree itself
 		if (value != null) {
@@ -207,7 +207,7 @@ public class BinaryTree {
 		}
 		
 		if (nth.decrementAndGet() == 0) {
-			return focus.name;
+			return focus.key;
 		}
 		
 		// Check in the right subtree

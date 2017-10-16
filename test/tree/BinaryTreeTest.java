@@ -101,7 +101,7 @@ public class BinaryTreeTest {
 
 		Node found = tree.findNode(77);
 
-		assertEquals(found.name, "77");
+		assertEquals(found.key, 77);
 	}
 
 	@Test
@@ -181,7 +181,7 @@ public class BinaryTreeTest {
 			tree.insertWithWhile(num);
 		}
 
-		assertEquals("2", tree.findSmallestValue());
+		assertEquals(2, tree.findSmallestValue(), 0);
 	}
 
 	@Test
@@ -211,7 +211,7 @@ public class BinaryTreeTest {
 			tree.insertWithWhile(num);
 		}
 
-		assertEquals("3", tree.findNthSmallestValue(2));
+		assertEquals(3, tree.findNthSmallestValue(2), 0);
 	}
 
 	@Test
@@ -243,7 +243,7 @@ public class BinaryTreeTest {
 			tree.insertWithWhile(num);
 		}
 
-		assertEquals("2", tree.findNthSmallestValue(2));
+		assertEquals(2, tree.findNthSmallestValue(2), 0);
 	}
 	
 	@Test
@@ -256,7 +256,7 @@ public class BinaryTreeTest {
 			tree.insertWithWhile(num);
 		}
 
-		assertEquals("4", tree.findNthSmallestValue(2));
+		assertEquals(4, tree.findNthSmallestValue(2), 0);
 	}
 	
 	@Test
@@ -269,6 +269,6 @@ public class BinaryTreeTest {
 			tree.insertWithWhile(num);
 		}
 
-		assertEquals("2", tree.findNthSmallestValue(2));
+		assertEquals(2, tree.findNthSmallestValue(2), 0);
 	}
 }
