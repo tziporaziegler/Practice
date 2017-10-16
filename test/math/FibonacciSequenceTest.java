@@ -47,5 +47,19 @@ public class FibonacciSequenceTest {
 		FibonacciSequence seq = new FibonacciSequence();
 		assertEquals(55, seq.getElement(10));
 	}
+	
+	@Test
+	public void testGet1stElementMemo() {
+		FibonacciSequence seq = new FibonacciSequence();
+		int numElement = 1;
+		assertEquals(1, seq.getElementMemoization(numElement, new int[numElement - 1]));
+	}
+	
+	@Test
+	public void testGet10thElementMemo() {
+		FibonacciSequence seq = new FibonacciSequence();		
+		int numElement = 10;
+		assertEquals(55, seq.getElementMemoization(numElement, new int[numElement - 1]));
+	}
 
 }
