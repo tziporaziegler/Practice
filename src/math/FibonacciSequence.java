@@ -23,7 +23,9 @@ public class FibonacciSequence {
 	}
 
 	/**
-	 * Non-Memoization - O(2^n)
+	 * Non-Memoization<br>
+	 * Time complexity = O(2^n)<br>
+	 * Space complexity = O(n) for call stack
 	 * 
 	 * @param position
 	 * @return
@@ -41,7 +43,10 @@ public class FibonacciSequence {
 	}
 
 	/**
-	 * Memoization - O(n)
+	 * Memoization<br>
+	 * Time complexity = O(n)<br>
+	 * Space complexity = O(n) for call stack + O(n) for memo array = O(n)
+	 * <p>
 	 * Decrease time complexity by increasing space complexity. Only compute each
 	 * fib number once and then store the number.
 	 * 
