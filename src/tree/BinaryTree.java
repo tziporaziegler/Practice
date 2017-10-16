@@ -72,6 +72,12 @@ public class BinaryTree {
 		return builder.toString();
 	}
 
+	/**
+	 * Left Child -> Parent -> Right Child
+	 * 
+	 * @param focus
+	 * @param builder
+	 */
 	private void inOrderTraversalRecursion(Node focus, StringBuilder builder) {
 		if (focus != null) {
 			inOrderTraversalRecursion(focus.leftChild, builder);
@@ -91,6 +97,12 @@ public class BinaryTree {
 		return builder.toString();
 	}
 
+	/**
+	 * Parent -> Left Child -> Right Child
+	 * 
+	 * @param focus
+	 * @param builder
+	 */
 	private void preorderTraversalRecursion(Node focus, StringBuilder builder) {
 		if (focus != null) {
 			builder.append(focus.key);
@@ -110,6 +122,12 @@ public class BinaryTree {
 		return builder.toString();
 	}
 
+	/**
+	 * Left Child -> Right Child -> Parent
+	 * 
+	 * @param focus
+	 * @param builder
+	 */
 	private void postOrderTraversalRecursion(Node focus, StringBuilder builder) {
 		if (focus != null) {
 			postOrderTraversalRecursion(focus.leftChild, builder);
