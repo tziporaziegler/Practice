@@ -39,6 +39,10 @@ it?
  - [Balanced Parentheses](/src/stack/BalancedParentheses.java)  
    Given a String, determine if the parentheses have pairs and are in order.
 
+### Linked List
+ - [Reverse Linked List](/src/linkedlist/ReverseLinkedList.java)  
+   Reverse a singly linked list.
+
 ### Tree
 
  - [Binary Tree](/src/tree/BinaryTree.java)  
