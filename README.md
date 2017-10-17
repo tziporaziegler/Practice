@@ -16,6 +16,8 @@ it?
    Given two arrays, find which number(s) is not present in the second array.
  - [Longest Consecutive Sequence](/src/array/LongestConsecutiveSequence.java)  
    Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
+ - [Two Sum](/src/array/TwoSum.java)  
+   Given an array of integers, return indices of the two numbers such that they add up to a specific target.
  - [Pascal Triangle](/src/array/PascalTriangleRows.java)  
    Given an integer `x`, generate the first `x` number of rows of Pascal’s triangle.
  - [Powerset](/src/array/Powerset.java)  
