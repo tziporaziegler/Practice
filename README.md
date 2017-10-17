@@ -18,6 +18,8 @@ it?
    Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
  - [Two Sum](/src/array/TwoSum.java)  
    Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+ - [Remove Duplicates from Sorted Array](/src/array/RemoveDuplicates.java)  
+   Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.
  - [Pascal Triangle](/src/array/PascalTriangleRows.java)  
    Given an integer `x`, generate the first `x` number of rows of Pascal’s triangle.
  - [Powerset](/src/array/Powerset.java)  
