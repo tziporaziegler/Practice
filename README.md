@@ -27,7 +27,7 @@ it?
 
  - [Remove Character](/src/string/RemoveChar.java)  
    Remove all instances of a specific character from the given String.
- - [Palindrome Check](/src/string/PalindromeCheck.java)  
+ - [String Palindrome Check](/src/string/PalindromeCheck.java)  
    Given a String, check if the String is a valid palindrome.
  - [Multiply String](/src/string/MultiplyString.java)  
    Given two numbers represented as strings, return multiplication of the numbers as a string. Do not use BigInteger.
@@ -72,6 +72,8 @@ it?
  - [Fibonacci Sequence](/src/math/FibonacciSequence.java)  
    Given an integer `x`, print `x` number of elements in the sequence.  
    Given an integer, return the value of the element in that position of the sequence.
+ - [Integer Palindrome Check](/src/math/IntPalindromeCheck.java)  
+   Given an integer, determine whether the integer is a valid palindrome.
  - [Prime Sum](/src/math/PrimeSum.java)  
    Given an even number (greater than 2), return two prime numbers whose sum will be equal to given number.  
  - [Find Factors](/src/math/FindFactors.java)  
