@@ -1,6 +1,18 @@
 # Practice
 A collection of Java interview practice problems and solutions, along with JUnit test files.
 
+## Table of Contents
+ - [Data Structures](#data-structures)
+   - [Array](#array)
+   - [String](#string)
+   - [Stack](#stack)
+   - [Linked List](#linked-list)
+   - [Tree](#tree)
+ - [Algorithms](#algorithms)
+   - [Sort](#sort)
+   - [Search](#search)
+   - [Math](#math)
+
 ## Data Structures
 
 ### Array
