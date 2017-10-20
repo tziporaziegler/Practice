@@ -57,10 +57,11 @@ it?
 
 ### Sort
 
- - [Quick Sort](/src/sort/QuickSort.java) - O(n log n)
+ - [Quick Sort](/src/sort/QuickSort.java) - average O(n log n); worst O(n^2)
+ - [Merge Sort](/src/sort/MergeSort.java) - guaranteed O(n log n)
+ - [Insertion Sort](/src/sort/InsertionSort.java) - O(n^2)
  - [Bubble Sort](/src/sort/BubbleSort.java) - O(n^2)
  - [Selection Sort](/src/sort/SelectionSort.java) - O(n^2)
- - [Insertion Sort](/src/sort/InsertionSort.java) - O(n^2)
  
 ### Search
 
