@@ -28,12 +28,7 @@ public class MergeSort {
 
 		// merge elements until finish one side
 		while (left <= midIndex && right <= highIndex) {
-			if (arr[left] < arr[right]) {
-				temp[index++] = arr[left++];
-			}
-			else {
-				temp[index++] = arr[right++];
-			}
+			temp[index++] = arr[left] < arr[right] ? arr[left++] : arr[right++];
 		}
 
 		// copy remaining elements from whichever side still has elements left
