@@ -13,9 +13,11 @@ A collection of Java interview practice problems and solutions, along with JUnit
    - [Search](#search)
    - [Math](#math)
 
-## Data Structures
+## Problems and Solutions
 
-### Array
+### Data Structures
+
+#### Array
 
  - [Find the Smallest Number](/src/array/FindSmallestNum.java)  
    Given an array, find the smallest number in the array.
@@ -37,7 +39,7 @@ it?
  - [Powerset](/src/array/Powerset.java)  
    Given an array or set of objects, return a set of all possible subsets.
  
-### String
+#### String
 
  - [Remove Character](/src/string/RemoveChar.java)  
    Remove all instances of a specific character from the given String.
@@ -48,26 +50,26 @@ it?
  - [Merge and Order String Characters](/src/string/MergeAndOrderStringChars.java)  
    Given an array of strings, return a single string containing all the characters in alphabetical order.
 
-### Stack
+#### Stack
 
  - [Array Implementation](/src/stack/StackArray.java)  
    Includes the following methods: push(), pop(), peek(), size(), isEmpty() and isFull().
  - [Balanced Parentheses](/src/stack/BalancedParentheses.java)  
    Given a String, determine if the parentheses have pairs and are in order.
 
-### Linked List
+#### Linked List
  - [Reverse Linked List](/src/linkedlist/ReverseLinkedList.java)  
    Reverse a singly linked list.
 
-### Tree
+#### Tree
 
  - [Binary Tree](/src/tree/BinaryTree.java)  
    Includes methods for inserting, removing, traversing (in order, pre-order, post-order)  
    and searching (find by value, smallest, nth smallest element).  
  
-## Algorithms
+### Algorithms
 
-### Sort
+#### Sort
 
  - [Quick Sort](/src/sort/QuickSort.java) - average O(n log n); worst O(n^2)
  - [Merge Sort](/src/sort/MergeSort.java) - guaranteed O(n log n)
@@ -75,12 +77,12 @@ it?
  - [Bubble Sort](/src/sort/BubbleSort.java) - O(n^2)
  - [Selection Sort](/src/sort/SelectionSort.java) - O(n^2)
  
-### Search
+#### Search
 
  - [Binary Search](/src/search/BinarySearch.java) - O(log n)
  - [Linear Search](/src/search/LinearSearch.java) - O(n)
 
-### Math
+#### Math
 
  - [Is Prime](/src/math/IsPrime.java)  
    Given an integer, determine whether the integer is a prime number.
@@ -93,3 +95,18 @@ it?
    Given an even number (greater than 2), return two prime numbers whose sum will be equal to given number.  
  - [Find Factors](/src/math/FindFactors.java)  
    Return a list of all factors of a given integer.
+
+## Contributing
+
+Know a better solution for one of these problems?  
+Have an alternate or more efficient solution that you think is worth including?  
+See a test case that wasn't accounted for?  
+See a way to improve an existing solution?
+
+Contributions and code improvement suggestions are welcome! Simply submit a [pull-request][1] or create an [issue][2].
+
+Before suggesting improvements or new solutions, please check the [test][3] folder for JUnit tests that corrospond to the file you are editing, and make sure your code passes those test. The test folder structure follows the same structure as the src folder.
+
+[1]: https://github.com/tziporaziegler/Practice/pulls
+[2]: https://github.com/tziporaziegler/Practice/issues
+[3]: https://github.com/tziporaziegler/Practice/tree/master/test
