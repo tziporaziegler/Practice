@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Practice" basedir="." default="init">
+   <property name="src.dir" location="src" />
+   <property name="bin.dir" location="bin" />
+   <property name="lib.dir" location="lib" />
+   <property name="test.dir" location="test" />
+   <path id="classpath">
+      <pathelement location="${bin.dir}" />
+      <pathelement location="${lib.dir}/hamcrest-core-1.3.jar" />
+      <pathelement location="${lib.dir}/junit-4.11.jar" />
+   </path>
+   <target name="clean">
+      <delete dir="${build.dir}" />
+   </target>
+   <!--<property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="8"/>-->
+   <target name="init" depends="clean">
+      <mkdir dir="${bin.dir}" />
+      <copy includeemptydirs="false" todir="${bin.dir}">
+         <fileset dir="${src.dir}">
+            <exclude name="**/*.launch" />
+            <exclude name="**/*.java" />
+         </fileset>
+      </copy>
+   </target>
+   <target name="compile" depends="init" description="compile">
+      <!--<javac debug="true" debuglevel="${debuglevel}" destdir="${bin.dir}" includeantruntime="false" source="${source}" target="${target}">-->
+      <javac srcdir="${src.dir}" destdir="${bin.dir}" classpathref="classpath" />
+   </target>
+   <target name="compileTest" depends="compile" description="compileTest">
+      <javac srcdir="${test.dir}" destdir="${bin.dir}" classpathref="classpath" />
+   </target>
+   <!--<target name="clean-build" depends="clean"/>-->
+   <!--<target name="main" depends="clean"/>-->
+   <target name="test" depends="compileTest">
+      <mkdir dir="${report.dir}" />
+      <junit printsummary="yes" haltonfailure="yes">
+         <classpath>
+            <path refid="classpath" />
+         </classpath>
+         <formatter type="xml" />
+         <test name="array.CompareArraysTest" todir="${report.dir}" />
+         <test name="string.MultiplyStringTest" todir="${report.dir}" />
+         <batchtest fork="yes" todir="${report.dir}">
+            <fileset dir="${test.dir}" includes="*Test.java" />
+         </batchtest>
+      </junit>
+   </target>
+   <!--<target name="junitreport">
+        <junitreport todir="${report.dir}">
+            <fileset dir="${report.dir}" includes="TEST-*.xml"/>
+            <report todir="${report.dir}"/>
+        </junitreport>
+    </target>-->
+</project>
