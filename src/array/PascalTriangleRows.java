@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * Given numRows, generate the first numRows of Pascal’s triangle.<br>
- * Pascal’s triangle : To generate A[C] in row R, sum up A’[C] and A’[C-1] from previous row R - 1.<br>
+ * Given numRows, generate the first numRows of Pascal's triangle.<br>
+ * Pascal's triangle : To generate A[C] in row R, sum up A'[C] and A'[C-1] from previous row R - 1.<br>
  * <p>
  * <strong>Example:</strong>
  * <p>

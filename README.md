@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tziporaziegler/Practice.svg?branch=master)](https://travis-ci.org/tziporaziegler/Practice)
+
 # Practice
 A collection of Java interview practice problems and solutions, along with JUnit test files.
 

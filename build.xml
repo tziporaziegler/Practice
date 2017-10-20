@@ -41,7 +41,20 @@
          </classpath>
          <formatter type="xml" />
          <test name="array.CompareArraysTest" todir="${report.dir}" />
+         <test name="array.FindDuplicateNumTest" todir="${report.dir}" />
+		 <test name="array.FindMissingNumTest" todir="${report.dir}" />
+         <test name="array.LongestConsecutiveSequenceTest" todir="${report.dir}" />
+		 <test name="array.PowersetTest" todir="${report.dir}" />
+         <test name="math.FibonacciSequenceTest" todir="${report.dir}" />
+		 <test name="math.FindFactorsTest" todir="${report.dir}" />
+         <test name="math.IsPrimeTest" todir="${report.dir}" />
+		 <test name="sort.SortTests" todir="${report.dir}" />
+         <test name="stack.StackArrayTest" todir="${report.dir}" />
+		 <test name="string.MergeAndOrderStringCharsTest" todir="${report.dir}" />
          <test name="string.MultiplyStringTest" todir="${report.dir}" />
+		 <test name="string.PalindromeTest" todir="${report.dir}" />
+         <test name="string.RemoveCharTest" todir="${report.dir}" />
+		 <test name="tree.BinaryTreeTest" todir="${report.dir}" />
          <batchtest fork="yes" todir="${report.dir}">
             <fileset dir="${test.dir}" includes="*Test.java" />
          </batchtest>
