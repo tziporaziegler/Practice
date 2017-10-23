@@ -7,7 +7,7 @@ public class FindSmallestNum {
 			int smallest = array[0];
 
 			for (int i = 1; i < array.length; i++) {
-				final int next = array[i];
+				int next = array[i];
 
 				if (next < smallest) {
 					smallest = next;
