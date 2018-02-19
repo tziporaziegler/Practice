@@ -27,7 +27,7 @@ public class MergeSortTest {
 
 		assertArrayEquals(expecteds, actuals);
 	}
-	
+
 	@Test
 	public void testNull() {
 		int[] expecteds = null;
